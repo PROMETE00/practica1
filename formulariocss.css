@@ -12,6 +12,7 @@
 }
 
 .cuadro{
+    margin-left:auto;
     background-color: #ffffff;
     position: relative;
     width: 300px;
@@ -23,7 +24,6 @@
     
    background-color: #216377;
   }
-
 .titl{
     color: white;
     text-shadow:
@@ -45,4 +45,14 @@
 .btn{
  text-align: left;
  margin: auto;
+
 }
+.formato_label{
+
+    color: #000000;
+
+}
+.formato_input{
+    color: #ff0000;
+    left: 200px;
+    }

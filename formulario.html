@@ -13,34 +13,37 @@
         <br>
        <div class="formulario">
         <H2>DATOS DEL ALUMNO</H2>
-        <label for="uname">Numero de control: </label>
-            <input type="text" id="numerocontrol" name="name" placeholder="Ejem. " /> <br>
+        <label class="formato_label">Numero de control: </label>
+            <input type="text" id="numerocontrol" name="name" placeholder="Ej: 21160727" /> <br><br>
                
-        <label for="uname">Nombres: </label>
-            <input type="text" id="nombres" name="name" placeholder="Ejem." /> <br> 
+        <label >Nombre/s: </label>
+            <input type="text" id="nombres" name="name" placeholder="Ej: Maria"/> <br><br> 
                         
-        <label for="uname">Primer Apellido: </label>
-            <input type="text" id="apellido1" name="name" placeholder="Ejem." /> <br>  
+        <label >Apellido Paterno: </label>
+            <input type="text" id="apellido1" name="name" placeholder="Ej: Lopez"/> <br><br>  
                        
-        <label for="uname">Segundo Apellido: </label>
-            <input type="text" id="apellido2" name="name" placeholder="Ejem." /> <br> 
+        <label >Apellido Materno: </label>
+            <input type="text" id="apellido2" name="name" placeholder="Ej: Lopez"/> <br> <br>
                           
-        <label for="uname">CURP: </label>
-            <input type="text" id="curp" name="name" placeholder="Ejem." /> <br>  
+        <label >CURP: </label>
+            <input type="text" id="curp" name="name" placeholder="Ej: SABC560626MDFLRN09"/> <br>  <br>
                     
-        <label for="uname">NSS: </label>
-            <input type="text" id="nss" name="name" placeholder="Ejem." /> <br>
+        <label >NSS: </label>
+            <input type="text" id="nss" name="name" placeholder="Ej:72795608040" /> <br><br>
                   
-        <label for="uname">Correo Institucional: </label>
-            <input type="text" id="correo" name="name" placeholder="Ejem." /> <br><br>
-                <button class="btn">Verificar</button>
-
+        <label >Correo Institucional: </label>
+            <input type="text" id="correo" name="name" placeholder="Ej:21160727@itoaxaca.edu.mx" /> <br><br>
+                <button class="btn">Verificar Datos</button>
+        
         <py-script> 
+        #implementacion con phyton
+
         from datetime import date
 
         today = date.today()
         date = today.strftime("%d - %m - %Y")
         print('La Fecha de Hoy es:', date)
+        
         </py-script> 
 
        </div>
