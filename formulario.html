@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="formulariocss.css">
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <title>EQUIPO 3</title>
+    </head>
+    <body class="grad">
+        
+        <center><h1 class="titl">TEMA 2 <br> PRACTICA 1</h1></center>
+        <div class="cuadro"><h2 class="textos">Equipo 3<br><br>Mendoza Luis Prometeo<br>Misael</h2></div>
+        <br>
+       <div class="formulario">
+        <H2>DATOS DEL ALUMNO</H2>
+        <label for="uname">Numero de control: </label>
+            <input type="text" id="numerocontrol" name="name" placeholder="Ejem. " /> <br>
+               
+        <label for="uname">Nombres: </label>
+            <input type="text" id="nombres" name="name" placeholder="Ejem." /> <br> 
+                        
+        <label for="uname">Primer Apellido: </label>
+            <input type="text" id="apellido1" name="name" placeholder="Ejem." /> <br>  
+                       
+        <label for="uname">Segundo Apellido: </label>
+            <input type="text" id="apellido2" name="name" placeholder="Ejem." /> <br> 
+                          
+        <label for="uname">CURP: </label>
+            <input type="text" id="curp" name="name" placeholder="Ejem." /> <br>  
+                    
+        <label for="uname">NSS: </label>
+            <input type="text" id="nss" name="name" placeholder="Ejem." /> <br>
+                  
+        <label for="uname">Correo Institucional: </label>
+            <input type="text" id="correo" name="name" placeholder="Ejem." /> <br><br>
+                <button class="btn">Verificar</button>
+
+        <py-script> 
+        from datetime import date
+
+        today = date.today()
+        date = today.strftime("%d - %m - %Y")
+        print('La Fecha de Hoy es:', date)
+        </py-script> 
+
+       </div>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+.textos{
+    position: relative;
+    bottom: 0;
+    color: #216377;
+    padding: 20px;
+    overflow: hidden;
+    text-shadow:
+    1.5px 1px 0 #000000,
+    -0px 0px 0 #000000,
+    -0px -0px 0 #000000,
+    0px -0px 0 #000000;
+}
+
+.cuadro{
+    background-color: #ffffff;
+    position: relative;
+    width: 300px;
+    border-color: white;
+    border-width: 10px;
+    border-radius: 20px;
+}
+.grad {
+    
+   background-color: #216377;
+  }
+
+.titl{
+    color: white;
+    text-shadow:
+    1.5px 1px 0 #000000,
+    -0px 0px 0 #000000,
+    -0px -0px 0 #000000,
+    0px -0px 0 #000000;
+}  
+.formulario{
+    padding: 50px;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 2%;
+    width: 1100px;
+    height: 500px;
+    margin: auto;
+}
+.btn{
+ text-align: left;
+ margin: auto;
+}
