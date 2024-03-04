@@ -21,7 +21,6 @@
     border-radius: 20px;
 }
 .grad {
-    
    background-color: #216377;
   }
 .titl{
@@ -32,27 +31,58 @@
     -0px -0px 0 #000000,
     0px -0px 0 #000000;
 }  
-.formulario{
-    padding: 50px;
-    align-items: center;
-    background-color: #ffffff;
-    color: #000000;
-    border-radius: 2%;
-    width: 1100px;
-    height: 500px;
-    margin: auto;
-}
 .btn{
- text-align: left;
- margin: auto;
-
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    position:absolute;
+    top: 750px;
+    right: 290px;
 }
 .formato_label{
-
     color: #000000;
-
 }
 .formato_input{
     color: #ff0000;
     left: 200px;
     }
+.dv1{
+    width: 350px;
+    height: 310px;
+    left: 200px;
+    margin: auto;
+    position:absolute;
+}
+.dv2{
+    
+    width: 350px;
+    height: 310px;
+    margin: auto;
+    position:absolute;
+    top: 353px;
+    right: 207px;
+    
+}
+.dv3{
+    border-radius: 2%;
+    width: 350px;
+    height: 200px;
+    left: 200px;
+    top: 700px;
+    margin: auto;
+    position:absolute;
+}
+.formulario{
+    padding: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 2%;
+    width: 1100px;
+    height: 850px;
+    margin: auto;
+}
+.mvretiqueta{
+   left: 170px;
+   position:absolute;
+   width: 250px;
+}

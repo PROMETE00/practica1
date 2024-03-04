@@ -1,51 +1,133 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
     <head>
+
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="formulariocss.css">
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
         <title>EQUIPO 3</title>
+
     </head>
-    <body class="grad">
-        
-        <center><h1 class="titl">TEMA 2 <br> PRACTICA 1</h1></center>
-        <div class="cuadro"><h2 class="textos">Equipo 3<br><br>Mendoza Luis Prometeo<br>Misael</h2></div>
-        <br>
-       <div class="formulario">
-        <H2>DATOS DEL ALUMNO</H2>
-        <label class="formato_label">Numero de control: </label>
-            <input type="text" id="numerocontrol" name="name" placeholder="Ej: 21160727" /> <br><br>
+        <body class="grad">
+            <center><h1 class="titl">TEMA 2 <br> PRACTICA 1</h1></center>
+                <div class="cuadro"><h2 class="textos">Equipo 3<br><br>Mendoza Luis Prometeo<br>Misael</h2></div>
+                    <br>
+                <div class="formulario">
+                    <form onsubmit="return validarFormulario()">
+                <div class="dv1">   
+                    <H2>Datos del alumno</H2>
+                        <label class="formato_label">Numero de control: </label>
+                            <input class="mvretiqueta" type="text" id="numerocontrol"  placeholder="Ej: 21160727" required> <br><br>
                
-        <label >Nombre/s: </label>
-            <input type="text" id="nombres" name="name" placeholder="Ej: Maria"/> <br><br> 
+                        <label >Nombre/s: </label>
+                            <input class="mvretiqueta"type="text" id="nombres"  placeholder="Ej: Maria"required> <br><br> 
                         
-        <label >Apellido Paterno: </label>
-            <input type="text" id="apellido1" name="name" placeholder="Ej: Lopez"/> <br><br>  
+                        <label >Apellido Paterno: </label>
+                            <input class="mvretiqueta"type="text" id="apellido1" placeholder="Ej: Lopez"required> <br><br>  
                        
-        <label >Apellido Materno: </label>
-            <input type="text" id="apellido2" name="name" placeholder="Ej: Lopez"/> <br> <br>
+                        <label >Apellido Materno: </label>
+                            <input class="mvretiqueta"type="text" id="apellido2"  placeholder="Ej: Lopez"required> <br> <br>
                           
-        <label >CURP: </label>
-            <input type="text" id="curp" name="name" placeholder="Ej: SABC560626MDFLRN09"/> <br>  <br>
-                    
-        <label >NSS: </label>
-            <input type="text" id="nss" name="name" placeholder="Ej:72795608040" /> <br><br>
-                  
-        <label >Correo Institucional: </label>
-            <input type="text" id="correo" name="name" placeholder="Ej:21160727@itoaxaca.edu.mx" /> <br><br>
-                <button class="btn">Verificar Datos</button>
-        
-        <py-script> 
-        #implementacion con phyton
+                        <label >CURP: </label>
+                            <input class="mvretiqueta"type="text" id="curp" placeholder="Ej: SABC560626MDFLRN09"required> <br>  <br>
 
-        from datetime import date
+                        <label >NSS: </label>
+                            <input class="mvretiqueta"type="text" id="nss"  placeholder="Ej:72795608040" required> <br><br>    
 
-        today = date.today()
-        date = today.strftime("%d - %m - %Y")
-        print('La Fecha de Hoy es:', date)
-        
-        </py-script> 
+                        <label >Correo Institucional: </label>
+                            <input class="mvretiqueta"type="text" id="correo"  placeholder="Ej:21160727@itoaxaca.edu.mx" required> <br><br>
+                </div>
+                <div class="dv2"> 
+                    <h2>Datos de la empresa</h2>
+                        <label>RFC:</label>
+                            <input class="mvretiqueta" type="text" id="rfc"  placeholder="Ej:21160727@itoaxaca.edu.mx" required> <br><br>
 
+                        <label>Nombre de la empresa:</label>
+                            <input class="mvretiqueta"type="text" id="nombreEmpresa" placeholder="Ej:21160727@itoaxaca.edu.mx" required> <br><br>
+
+                        <label>Estado:</label>
+                            <input class="mvretiqueta"type="text" id="estado" placeholder="Ej:21160727@itoaxaca.edu.mx" required> <br><br>
+
+                        <label>Municipio:</label>
+                            <input class="mvretiqueta"type="text" id="municipio" placeholder="Ej:21160727@itoaxaca.edu.mx" required> <br><br>
+
+                        <label>Localidad:</label>
+                            <input class="mvretiqueta"type="text" id="localidad" placeholder="Ej:21160727@itoaxaca.edu.mx" required> <br><br>
+
+                        <label>Domicilio:</label>
+                            <input class="mvretiqueta"type="text" id="domicilio" placeholder="Ej:21160727@itoaxaca.edu.mx" required> <br><br>
+                </div>   
+                <div class="dv3">       
+                    <h2>Datos generales:</h2>
+                        <label>Nombre del proyecto:</label>
+                            <input class="mvretiqueta"type="text" id="nombreProyecto" placeholder="Ej:21160727@itoaxaca.edu.mx" required> <br><br>
+
+                        <label>Fecha de inicio:</label>
+                            <input class="mvretiqueta"type="text" id="fechaInicio" placeholder="YYYY-MM-DD" required> <br><br>
+
+                        <label>Fecha fin:</label>
+                            <input class="mvretiqueta"type="text" id="fechaFin" placeholder="YYYY-MM-DD" required> <br><br>
+                </div>
+                            <input class="btn"type="submit" value="Vefificar Datos">
+                    </form>            
+                <script>
+                    function validarFormulario() {
+                        // Obtener los valores de los campos
+                        var numeroControl = document.getElementById('numeroControl').value;
+                        var nombres = document.getElementById('nombres').value;
+                        var primerApellido = document.getElementById('primerApellido').value;
+                        var segundoApellido = document.getElementById('segundoApellido').value;
+                        var curp = document.getElementById('curp').value;
+                        var nss = document.getElementById('nss').value;
+                        var correoInstitucional = document.getElementById('correoInstitucional').value;
+                        var rfc = document.getElementById('rfc').value;
+                        var nombreEmpresa = document.getElementById('nombreEmpresa').value;
+                        var estado = document.getElementById('estado').value;
+                        var municipio = document.getElementById('municipio').value;
+                        var localidad = document.getElementById('localidad').value;
+                        var domicilio = document.getElementById('domicilio').value;
+                        var nombreProyecto = document.getElementById('nombreProyecto').value;
+                        var fechaInicio = document.getElementById('fechaInicio').value;
+                        var fechaFin = document.getElementById('fechaFin').value;
+            
+                        // Expresiones regulares
+                        var regexLetrasMayusculas = /^[A-ZÑÁÉÍÓÚÜ\s]+$/;
+                        var regexNumeroControl = /^[0-9]{8}$/;
+                        var regexCurp = /^[A-Z]{4}[0-9]{6}[HM]{1}[A-Z]{5}[0-9]{2}$/;
+                        var regexCorreoInstitucional = /^[a-zA-Z0-9._-]+@institucion\.edu\.mx$/;
+                        var regexNSS = /^[0-9]{11}$/;
+                        var regexRFC = /^[A-Z]{4}[0-9]{6}[A-Z0-9]{3}$/;
+                        var regexFecha = /^\d{4}-\d{2}-\d{2}$/;
+            
+                        // Validaciones
+                        if (!regexNumeroControl.test(numeroControl)) {
+                            alert('Número de control no válido');
+                            return false;
+                        }
+                        if (!regexLetrasMayusculas.test(nombres) || !regexLetrasMayusculas.test(primerApellido) || !regexLetrasMayusculas.test(segundoApellido)) {
+                            alert('Nombre(s) y apellidos deben contener solo letras mayúsculas');
+                            return false;
+                        }
+                        if (!regexCurp.test(curp)) {
+                            alert('CURP no válido');
+                            return false;
+                        }
+                        if (!regexNSS.test(nss)) {
+                            alert('NSS no válido');
+                            return false;
+                        }
+                        if (!regexCorreoInstitucional.test(correoInstitucional)) {
+                            alert('Correo institucional no válido');
+                            return false;
+                        }
+                        if (!regexRFC.test(rfc)) {
+                            alert('RFC no válido');
+                            return false;
+                        }
+                        alert('Formulario válido, se puede enviar.');
+                        return true;
+                    }
+                </script>
        </div>
     </body>
 </html>
