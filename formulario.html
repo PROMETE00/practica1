@@ -91,13 +91,13 @@
                         var fechaFin = document.getElementById('fechaFin').value;
             
                         // Expresiones regulares
-                        var regexLetrasMayusculas = /^[A-ZÑÁÉÍÓÚÜ\s]+$/;
-                        var regexNumeroControl = /^[0-9]{8}$/;
-                        var regexCurp = /^[A-Z]{4}[0-9]{6}[HM]{1}[A-Z]{5}[0-9]{2}$/;
-                        var regexCorreoInstitucional = /^[a-zA-Z0-9._-]+@institucion\.edu\.mx$/;
-                        var regexNSS = /^[0-9]{11}$/;
-                        var regexRFC = /^[A-Z]{4}[0-9]{6}[A-Z0-9]{3}$/;
-                        var regexFecha = /^\d{4}-\d{2}-\d{2}$/;
+                        var LetrasMayusculas = /^[A-ZÑÁÉÍÓÚÜ\s]+$/;
+                        var NumeroControl = /^[0-9]{8}$/;
+                        var Curp = /^[A-Z]{4}[0-9]{6}[HM]{1}[A-Z]{5}[0-9]{2}$/;
+                        var CorreoInstitucional = /^[a-zA-Z0-9._-]+@institucion\.edu\.mx$/;
+                        var NSS = /^[0-9]{11}$/;
+                        var RFC = /^[A-Z]{4}[0-9]{6}[A-Z0-9]{3}$/;
+                        var Fecha = /^\d{4}-\d{2}-\d{2}$/;
             
                         // Validaciones
                         if (!regexNumeroControl.test(numeroControl)) {
