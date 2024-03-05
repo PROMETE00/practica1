@@ -19,6 +19,7 @@
     border-color: white;
     border-width: 10px;
     border-radius: 20px;
+    right: 45px;
 }
 .grad {
    background-color: #216377;
@@ -30,6 +31,10 @@
     -0px 0px 0 #000000,
     -0px -0px 0 #000000,
     0px -0px 0 #000000;
+    left: 500px;
+    top: 50px;
+    position: absolute;
+    margin: auto;
 }  
 .btn{
     width: 100px;
@@ -59,7 +64,7 @@
     height: 310px;
     margin: auto;
     position:absolute;
-    top: 353px;
+    top: 253px;
     right: 207px;
     
 }
